@@ -1,0 +1,43 @@
+package com.demo.spring.dao.imp;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.demo.spring.entity.Emp;
+import com.demo.spring.entity.dao.EmpDao;
+
+@Repository
+public class EmpDaoJdbcImpl implements EmpDao{
+
+	@Override
+	public String save(Emp e) {
+		return "Update: "  + e.getEmpId();
+	}
+
+	@Override
+	public String delete(int empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String update(Emp e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Emp findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Emp> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

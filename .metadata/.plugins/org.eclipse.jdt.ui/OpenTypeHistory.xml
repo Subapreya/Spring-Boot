@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=spring-app2/src\/main\/java&lt;com.demo.spring.dao.imp{EmpDaoJdbcImpl.java[EmpDaoJdbcImpl" modifiers="1" timestamp="1531127928648"/>
+<typeInfo handle="=spring-jpa/src\/main\/java&lt;com.demo.spring.entity.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1531206579459"/>
+<typeInfo handle="=spring-data-jpa/C:\/Users\/Verizon\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/2.0.8.RELEASE\/spring-data-commons-2.0.8.RELEASE.jar&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1531225328381"/>
+</typeInfoHistroy>

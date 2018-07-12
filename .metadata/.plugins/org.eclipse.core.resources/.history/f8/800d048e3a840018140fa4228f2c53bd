@@ -1,0 +1,60 @@
+package com.demo.spring.dao.imp;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.demo.spring.entity.Emp;
+import com.demo.spring.entity.dao.EmpDao;
+
+@Repository
+@Transactional
+public class EmpDaoJPAImpl implements EmpDao {
+
+	@PersistenceContext
+	EntityManager em;
+
+	@Override
+	public String save(Emp e) {
+		em.persist(e);
+		return null;
+	}
+
+	@Override
+	public String delete(int empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String update(Emp e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Emp findById(int id) {
+		Emp e = em.find(Emp.class, id);
+		return e;
+	}
+
+	@Override
+	public List<Emp> getAll() {
+		Query query = em.createQuery("select e from Emp e");
+		List<Emp> list = query.getResultList();
+		return list;
+	}
+
+	
+	public String saveBatch(List<Emp> list) {
+		for(Emp e: list) {
+			em.persist(e);
+		}
+		return "success";
+	}
+}

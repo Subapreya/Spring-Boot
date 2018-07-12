@@ -1,0 +1,16 @@
+package com.demo.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.demo.spring.service.HRService;
+
+public class JpaMain {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(DaoConfig.class);
+		HRService hrs= (HRService)ctx.getBean("HRService");
+		hrs.addEmployee(201, "kiran", "HYD", 109);
+	}
+
+}

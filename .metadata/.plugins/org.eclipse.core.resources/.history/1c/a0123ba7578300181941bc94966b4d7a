@@ -1,0 +1,11 @@
+package com.demo.spring.entity;
+
+public class Emp {
+
+	private int empId;
+	private String name;
+	private String city;
+	private double salary;
+	
+	
+}

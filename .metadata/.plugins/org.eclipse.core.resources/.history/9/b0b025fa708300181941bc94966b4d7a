@@ -1,0 +1,15 @@
+package com.demo.spring;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Audience {
+
+	public void switchOffMob() {
+		System.out.println("Switched OFF");
+	}
+	
+	public void applaud() {
+		System.out.println("clap..clap..");
+	}
+}

@@ -1,0 +1,21 @@
+package com.demo.spring;
+
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class Audience {
+
+	@Before("")
+	public void switchOffMob() {
+		System.out.println("Switched OFF");
+	}
+	
+	@AfterReturning("")
+	public void applaud() {
+		System.out.println("clap..clap..");
+	}
+}

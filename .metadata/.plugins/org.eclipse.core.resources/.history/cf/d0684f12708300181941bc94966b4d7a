@@ -1,0 +1,8 @@
+package com.demo.spring;
+
+public class Audience {
+
+	public void switchOffMob() {
+		System.out.println("Switched OFF");
+	}
+}

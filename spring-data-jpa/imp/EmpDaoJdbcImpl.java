@@ -1,0 +1,17 @@
+package com.demo.spring.dao.imp;
+
+import org.springframework.stereotype.Repository;
+
+import com.demo.spring.entity.Emp;
+import com.demo.spring.entity.dao.EmpDao;
+
+@Repository
+public class EmpDaoJdbcImpl implements EmpDao{
+
+	@Override
+	public String save(Emp e) {
+		return "Update: "  + e.getEmpId();
+	}
+	
+
+}

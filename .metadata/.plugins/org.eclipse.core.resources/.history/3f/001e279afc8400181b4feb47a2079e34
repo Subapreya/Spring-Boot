@@ -1,0 +1,9 @@
+package com.demo.spring;
+
+public class GetCLient {
+
+	public static void main(String[] args) {
+
+	}
+
+}
